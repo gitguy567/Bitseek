@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(1, 1, 43);
+}
+header{  
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav .logo{
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 1.5rem;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+ul li a {
+  list-style: none; 
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-family: tahoma;
+  position: relative;
+ 
+}
+ul li a::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgb(242, 240, 240);
+    border-radius: 50%;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%) scale(0);
+}
+ul li a:hover::before{
+    transform: scale(1);
+}
+a[href="home"]{
+    border-bottom: 2px solid white;
+}
+.nav-button{
+    gap:20px;
+    position: relative;
+    overflow: hidden;
+}
+.nav-button :nth-child(1){
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    border:1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: capitalize;
+}
+.nav-button::before{
+    content:"";
+    width: 5px;
+    height: 120px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: -15%;
+    top: -50%;
+    transform: rotate(-20deg);
+    transition: 0.3s;
+}
+.nav-button:hover::before{
+    left: 230px;
+}
+.nav-button :nth-child(2){
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+     color: white;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right ,rgb(5, 5, 210) , rgb(91, 234, 242) );
+}
+.nav-button :nth-child(2) a{
+    border: none;
+    text-decoration: none;
+}
+.header-right{
+    width: 50%;
+    height: 80%;
+    padding: 40px;
+    place-content: center;
+}
+.header-right h4{
+    background: rgba(2, 2, 66, 0.447);
+    color: white;
+    border: 1px solid white;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 3px;
+    margin-bottom: 5px;
+    font-family: tahoma;
+}
+.header-right h1{
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: tahoma;
+    margin-bottom: 5px;
+}
+.header-right span{
+    color: rgb(160, 7, 225);
+}
+.header-right .two{
+    color: rgb(32, 32, 245);
+}
+.header-right p{
+    color: white;
+    font-family: tahoma;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.header-right-button :nth-child(1){
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+     background-image: linear-gradient(to right ,rgb(5, 5, 210) , rgb(91, 234, 242) );
+     border: none;
+     text-transform: capitalize;
+     color: white;
+     margin-bottom: 10px;
+}
+.header-right-button :nth-child(2){
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgba(2, 2, 82, 0.433);
+    border: 1px solid white;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.header-right i{
+    background: transparent;
+}
+.image{
+    width:180px;
+    justify-content: space-evenly;
+}
+.image img{
+    border-radius: 50px;
+}
+.inovators {
+    display: flex;
+    align-items: center;
+}
+.inovators p{
+    font-family: tahoma;
+    font-size: 1rem;
+}
+.section{
+    height: 330px;
+    width: 98%;
+    transform: translateX(10px);
+    border-radius: 20px;
+    background-color: rgba(10, 6, 84, 0.996);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 9px 32px rgb(0, 0, 0);
+    padding:7px;
+}
+.section p{
+    text-align: center;
+     color: rgb(160, 7, 225);
+     font-family: tahoma;
+     font-size: 1rem;
+     text-transform: capitalize;
+}
+.section h3{
+    text-align: center;
+    color: white;
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.first-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.same{
+    display: flex;
+    align-items: center;
+    width: 310px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 3px;
+    gap: 5px;
+    transition: 0.4s;
+       background-color: rgba(78, 63, 244, 0.247);
+}
+.same:active{
+    transform: scale(0.9);
+}
+.same h3{
+    color: white;
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.same img{
+ border-radius: 10px;
+}
+.same p{
+    color: white;
+    font-weight: 100;
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    text-align: left;
+}
+.same i{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.same a img{
+    /* text-align: center; */
+    color: white;
+    /* align-items: center; */
+    margin-top: 20px;
+}
+.second-row{
+    align-items: center;
+     background-color: rgba(78, 63, 244, 0.247);
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+.king{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid white;
+    width: 250px;
+    gap: 10px; 
+}
+.king img{
+    border-radius: 10px;
+}
+.second-row :nth-child(4){
+    border: none;
+}
+.kings h2{
+    color: white;
+    font-family: tahoma;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.kings p{
+    color: white;
+    font-family: tahoma;
+    font-size: 1rem;
+}
+.hamburger{
+    position: relative;
+    display: none;
+}
+.hamburger .ham{
+   display: none;
+}
+.hamburger ul li a{
+    display: none;
+    list-style: none;
+}
+.hamburger img{
+    border-radius: 15px;
+}
+.hamburger label {
+    cursor: pointer;
+}
+#han:checked ~ ul li a {
+    display: block;
+}
+@media (max-width:768px){
+body{
+    height: fit-content;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+header{  
+    background-size: cover;
+    background-position: right;
+    height: fit-content;
+    width: 100%;
+}
+header nav{
+    justify-content: space-evenly;
+
+}
+.hamburger{
+    display: block;
+    font-size: 0.8rem;
+}
+#han:checked ul li a{
+    display: block;
+    
+}
+.nav-button{
+    display: flex; 
+}
+nav .logo{
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 1.5rem;
+}
+ul li a{
+    display: none;
+}
+.header-right{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    place-content: center;
+}
+.header-right h4{
+    background: rgba(2, 2, 66, 0.447);
+    color: white;
+    border: 1px solid white;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 3px;
+    margin-bottom: 2px;
+    font-family: tahoma;
+    font-weight: 0.8rem;
+}
+.header-right h1{
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: tahoma;
+    margin-bottom: 2px;
+}
+.header-right span{
+    color: rgb(160, 7, 225);
+}
+.header-right .two{
+    color: rgb(32, 32, 245);
+}
+.header-right p{
+    color: white;
+    font-family: tahoma;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+.header-right-button :nth-child(1){
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+     background-image: linear-gradient(to right ,rgb(5, 5, 210) , rgb(91, 234, 242) );
+     border: none;
+     text-transform: capitalize;
+     color: white;
+     margin-bottom: 10px;
+}
+.header-right-button :nth-child(2){
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgba(2, 2, 82, 0.433);
+    border: 1px solid white;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.inovators p{
+    font-family: tahoma;
+    font-size: 0.8rem;
+}
+.section{
+    height: fit-content;
+    width: 100%;
+    transform: none;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgba(72, 71, 71, 0.219);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 9px 32px rgba(0,0,0,0.2);
+}
+.section p{
+    text-align: center;
+     color: rgb(160, 7, 225);
+     font-family: tahoma;
+     font-size: 1rem;
+     text-transform: capitalize;
+}
+.section h3{
+    text-align: center;
+    color: white;
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.first-row{
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+}
+.same{
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 5px;
+       background-color: rgba(78, 63, 244, 0.247);
+}
+.same h3{
+    color: white;
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    text-align: left;
+}
+.same img{
+ border-radius: 10px;
+ width: 50px;
+ height: 50px;
+}
+.same p{
+    color: white;
+    font-weight: 100;
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    text-align: left;
+}
+.same i{
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+}
+.same a img{
+    /* text-align: center; */
+    color: white;
+    /* align-items: center; */
+    margin-top: 20px;
+}
+.second-row{
+     display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+.king{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid white;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid white;
+    gap: 10px; 
+}
+.king img{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+.second-row :nth-child(4){
+    /* border: none; */
+}
+.kings h2{
+    color: white;
+    font-family: tahoma;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.kings p{
+    color: white;
+    font-family: tahoma;
+    font-size: 0.8rem;
+}
+}

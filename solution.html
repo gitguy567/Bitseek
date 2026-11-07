@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(images/registeration-background.png);
+        }
+        nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav .logo{
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 1.5rem;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+ul li a {
+  list-style: none; 
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-family: tahoma;
+  position: relative;
+ 
+}
+a[href="solution.html"]{
+    border-bottom: 2px solid white;
+}
+ul li a::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgb(242, 240, 240);
+    border-radius: 50%;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%) scale(0);
+}
+ul li a:hover::before{
+    transform: scale(1);
+}
+.nav-button{
+    gap:20px;
+    position: relative;
+    overflow: hidden;
+}
+.nav-button :nth-child(1){
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    border:1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: capitalize;
+}
+.nav-button::before{
+    content:"";
+    width: 5px;
+    height: 120px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: -15%;
+    top: -50%;
+    transform: rotate(-20deg);
+    transition: 0.3s;
+}
+.nav-button:hover::before{
+    left: 230px;
+}
+.nav-button :nth-child(2){
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+     color: white;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right ,rgb(5, 5, 210) , rgb(91, 234, 242) );
+}
+.nav-button :nth-child(2) a{
+    border: none;
+    text-decoration: none;
+}
+        .first{
+            margin-top: 30px;
+        }
+        .first h1{
+            font-family: tahoma;
+            font-size: 2rem;
+            color: rgb(232, 232, 238) ;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+       .first p{
+            color: white;
+            text-transform: capitalize;
+            font-size: 0.9rem;
+            text-align: center;
+            font-family: tahoma;
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .box{
+          border: 1px solid blue;
+          padding: 20px;
+          height: fit-content;
+          width: fit-content;
+          margin: 15px;
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.442);
+        }
+        .box h3{
+            color: white;
+            font-family: tahoma;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+        .box p{
+            color: white;
+            font-family: tahoma;
+            font-size: 0.9rem;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+        .box button{
+            border: 1px solid blue;
+            width: 100px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.255);
+        }
+        .box button a{
+            color: white;
+            font-family: tahoma;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+         .second{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            background-color: rgba(0, 0, 0, 0.276);
+        }
+        .box2{
+          padding: 20px;
+          height: fit-content;
+          width: fit-content;
+          margin: 5px;
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.134);
+        }
+        .box2 h3{
+            color: white;
+            font-family: tahoma;
+            text-transform: capitalize;
+        }
+        .box2 p{
+            color: white;
+            font-family: tahoma;
+            text-transform: capitalize;
+        }
+        .flexs h2{
+            text-align: center;
+            font-family: tahoma;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <nav>
+            <a href=""class="logo">BitSeek</a>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">features</a></li>
+                <li><a href="solution.html">solutions</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+            <div class="nav-button">
+                <button>login</button>
+                <button><a href="registeration.html">get started</a></button>
+            </div>
+        </nav>
+    <div class="first">
+        <h1>bitseek solutions: transforming</h1> <h1>industries with decentralized ai</h1>
+        <p>tailored web3 and ai infrastructure for every ecosystem, combining intelligence, privacy, and sovereignty.</p>
+    </div>
+    <div class="flex">
+        <div class="box">
+            <h3>defi & autonomous trading</h3>
+            <p>automate sophisticated trading strategies and risk management with AI agents operating on smart contracts.</p>
+            <button><a href="">learn more</a></button>
+        </div>
+                <div class="box">
+            <h3>privacy-preserving health AI</h3>
+            <p> train diagnostics models on sensitive patient data using zero-knowledge proofs and secure data enclaves</p>
+            <button><a href="">learn more</a></button>
+        </div>
+            <div class="box">
+            <h3>supply chain optimization</h3>
+            <p> improve transparency, predict demand, and enhance logistics efficiency using decentralized intelligence and ioT data</p>
+            <button><a href="">learn more</a></button>
+        </div>
+    </div>
+    <div class="flexs">
+        <h2>key solution architecture</h2>
+        <div class="second">
+        <div class="box2">
+            <h3>custom ai agent frameworks</h3>
+            <p>custom ai agent in trading strategies and risk management with ai agents operating on smart contracts.</p>
+        </div>
+         <div class="box2">
+            <h3>encrypted data storage</h3>
+            <p>custom ai agent in trading strategies and risk management with ai agents operating on smart contracts.</p>
+        </div>
+         <div class="box2">
+            <h3>decentralized model training (DeML)</h3>
+        <p> improves transperency, predict demand,ftin, and enhance logistics efficiency using decentralized intelligence and IoT data.</p>
+        </div>
+    </div>
+    <button>request a technical demo</button>
+</body>
+</html>
